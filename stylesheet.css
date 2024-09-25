@@ -1,0 +1,542 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 5px solid #2980b9;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav div {
+    display: flex; 
+    align-items: center;
+}
+
+header nav div img {
+    width: 50px;
+    margin-right: 22px;
+}
+
+header nav div p {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    color: white;
+    margin-left: 20px;
+    margin-right: 25px;
+    font-size: 22px;
+    position: relative;
+}
+
+header nav ul li .Home_a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li .Home_a:hover {
+    color: #678cb1;
+}
+
+header nav ul li .dropdown {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+header nav ul .dropdown:hover {
+    color: #678cb1;
+    cursor: pointer
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;    
+    background-color: #34495e;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 62.5px;
+    left: -20px;
+    width: 198px;
+}
+
+.dropdown_content li {
+    padding: 10px;
+    margin-left: 0px;
+    padding-left: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #2c3e50;
+    width: 100%;
+}
+
+.dropdown_content li:hover {
+    background-color: #2980b9;
+}
+
+.show {
+    display: block;
+}
+
+footer {
+    background-color: #2c3e50;
+    max-height: 98px;
+    color: white;
+    padding: 10px 0;
+    border-top: 5px solid #2980b9;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-left: 50px;
+}
+
+.footer_credits {
+    text-align: center; 
+    font-size: small; 
+    padding-left: 60px;
+}
+
+footer ul li {
+    list-style: none;
+    display: flex;
+    margin: 0 45px;
+}
+
+footer ul li p {
+    color: white;
+    padding-left: 5px; 
+    padding-top: 2.5px;
+    float: right;
+}
+
+/* Introduction section */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 45px;
+    color: #2980b9;
+}
+
+table {
+    max-width: 1200px;
+    margin: 20px auto;
+    border-spacing: 3px;
+}
+
+td {
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Content styling */
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+th, h2 {
+    font-size: 28px;
+    color: #2980b9;
+    text-align: center;
+}
+
+/* Dream Destinations styling */
+table tr td {
+    vertical-align: top;
+}
+
+iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#homepage_background{
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65) 10%,rgba(255, 255, 255, 0.65) 90.5%,rgba(255, 255, 255, 0) ),
+        url(images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#introduction {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.section_header {
+    font-size: 40px;
+}
+
+#profile {
+    padding-right: 80px;
+    margin-right: 20px;
+}
+
+#profile img{
+    border-radius: 50%;
+}
+
+.section_caption {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 22px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#destination_list {
+    padding-left: 50px;
+    padding-right: 95px;
+}
+
+#salar {
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.caption_on_right {
+    padding-right: 95px;
+}
+
+.img_credits {
+    font-size: 15px;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    display: block;
+    font-weight: normal;
+}
+
+.img_credits a img {
+    width: 20px;
+}
+
+#aurora {
+    padding-left: 50px;
+}
+
+#aurora_video {
+    padding-left: 0px;
+    padding-top: 65px;
+    text-align: left;
+}
+
+#aurora_credits {
+    padding-right: 90px;
+}
+
+#castle {
+    padding-top: 22px;
+    padding-left: 50px;
+}
+
+.continents {
+    width: 100%; 
+    table-layout: auto; 
+    margin: 0 auto;
+}
+
+.continents td {
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.continents h3 {
+    color: #2980b9;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.continents img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+#na:hover {
+    cursor: pointer;
+    content: url(images/North\ America_green.png);  
+}
+
+#sa:hover {
+    cursor: pointer;
+    content: url(images/South\ America_green.png);
+}
+
+#eu:hover {
+    cursor: pointer;
+    content: url(images/Europe_green.png);
+}
+
+#af:hover {
+    cursor: pointer;
+    content: url(images/Africa_green.png);
+}
+
+#as:hover {
+    cursor: pointer;
+    content: url(images/Asia_green.png);
+}
+
+#oc:hover {
+    cursor: pointer;
+    content: url(images/Australia_green.png);
+}
+
+#an:hover {
+    cursor: pointer;
+    content: url(images/Antarctica_green.png);
+}
+
+#NA_background {
+    width: 100%;
+    height: 100vh;
+    color: #333333;
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65) 12%,rgba(255, 255, 255, 0.65) 88%,rgba(255, 255, 255, 0) ),
+        url(images/NA_images/NA_background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#NA_background em {
+    color: rgba(4, 76, 201, 0.95);
+    font-style: normal;
+}
+
+#NA_background table{
+    font-weight: 700;
+}
+
+#NA_background h1 {
+    color:#333333;
+    font-size: 38px;
+}
+
+.continent_introduction p {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.destinations {
+    table-layout: fixed;
+    padding-left: 100px;
+    padding-right: 95px;
+}
+
+.destinations tr td {
+    width: 50%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.destinations tr td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#SA_background {
+    width: 100%;
+    height: 100vh;
+    color: rgb(16, 253, 16);
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.584) 12%,rgba(0, 0, 0, 0.584) 88%,rgba(255, 255, 255, 0) ),
+        url(images/SA_images/SA_background_image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#SA_background em {
+    color: rgba(129, 171, 255, 0.95);
+    font-style: normal;
+}
+
+#SA_background h1 {
+    color: rgb(16, 253, 16);
+    font-size: 38px;
+}
+
+#EU_background {
+    width: 100%;
+    height: 100vh;
+    color: aqua;
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.584) 12%,rgba(0, 0, 0, 0.584) 88%,rgba(255, 255, 255, 0) ),
+        url(images/EU_images/EU_background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Eu_background em {
+    color: white;
+    font-style: normal;
+}
+
+#EU_background h1 {
+    color: aqua;
+    font-size: 38px;
+}
+
+#AF_background {
+    width: 100%;
+    height: 100vh;
+    color: rgb(108, 42, 42);
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0.65) 12%,rgba(255, 255, 255, 0.65) 88%,rgba(255, 255, 255, 0) ),
+        url(images/AF_images/AF_background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#AF_background em {
+    color:rgb(107, 147, 42);
+    font-style: normal;
+}
+
+#AF_background h1 {
+    color: rgb(108, 42, 42);
+    font-size: 38px;
+}
+
+#AS_background {
+    width: 100%;
+    height: 100vh;
+    color: rgb(127, 1, 1);
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0.65) 12%,rgba(255, 255, 255, 0.65) 88%,rgba(255, 255, 255, 0) ),
+        url(images/AS_images/AS_background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#AS_background em {
+    color: rgb(255, 0, 0);
+    font-style: normal;
+}
+
+#AS_background h1 {
+    color: rgb(127, 1, 1);
+    font-size: 38px;
+}
+
+#OC_background {
+    width: 100%;
+    height: 100vh;
+    color: rgb(255, 255, 0);
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0.65) 12%,rgba(255, 255, 255, 0.65) 88%,rgba(255, 255, 255, 0) ),
+        url(images/OC_images/OC_background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#OC_background em {
+    color: rgb(50, 88, 200);
+    font-style: normal;
+}
+
+#OC_background h1 {
+    color: rgb(255, 255, 0);
+    font-size: 38px;
+}
+
+#AN_background {
+    width: 100%;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background: 
+        linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(0, 0, 0, 0.65) 12%,rgba(0, 0, 0, 0.65) 88%,rgba(255, 255, 255, 0) ),
+        url(images/AN_images/AN_background_image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#AN_background em {
+    color: deepskyblue;
+    font-style: normal;
+}
+
+#AN_background h1 {
+    color: deepskyblue;
+    font-size: 38px;
+}
+
+#melting_container {
+    text-align: center;
+}
+
+#melting_container img {
+    max-width: 50%;
+}
